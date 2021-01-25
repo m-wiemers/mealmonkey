@@ -1,11 +1,10 @@
 .btn {
-  border-radius: 20px;
+  border-radius: 28pt;
   font-size: 16px;
   color: white;
   background: #fc6011;
   border: none;
   padding: 15px 20px;
-  border-radius: 28pt;
 }
 
 .btn-border {
