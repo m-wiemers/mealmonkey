@@ -1,4 +1,4 @@
-.cardImg {
+.card-image {
   text-align: center;
   width: 80px;
   height: 80px;
@@ -9,8 +9,8 @@
   object-position: center;
 }
 
-.cardText {
-  margin: 0 4px 4px 4px;
+.card-text {
+  margin: 0;
   text-align: center;
   font-weight: bold;
   font-size: 0.8em;
