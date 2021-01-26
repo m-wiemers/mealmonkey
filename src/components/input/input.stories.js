@@ -7,5 +7,5 @@ export default {
   parameters: { layout: "centered" },
 };
 
-export const inputemail = () => inputmail;
-export const inputpassw = () => inputpass;
+export const email = () => inputmail;
+export const password = () => inputpass;
