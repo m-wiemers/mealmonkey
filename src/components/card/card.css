@@ -1,8 +1,24 @@
-.card-image {
+.card-container {
+  display: grid;
+  grid-auto-flow: column;
+  column-gap: 20px;
+  overflow-x: auto;
+  padding-left: 20px;
+  justify-content: start;
+}
+
+.card-container::after {
+  content: "";
+  width: 10px;
+}
+
+.card {
   text-align: center;
+}
+
+.card-image {
   width: 80px;
   height: 80px;
-  margin: 4px 4px 0 4px;
   border: none;
   border-radius: 10px;
   object-fit: cover;
@@ -11,8 +27,11 @@
 
 .card-text {
   margin: 0;
-  text-align: center;
   font-weight: bold;
   font-size: 0.8em;
   color: #4a4b4d;
+}
+
+.card-container::-webkit-scrollbar {
+  display: none;
 }
