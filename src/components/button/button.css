@@ -14,6 +14,7 @@
 }
 
 .btn-fb {
-  background-color: #367fc0;
+  background-color: var(--facebook-color);
+  border: 1px solid var(--facebook-color);
   font-size: 12px;
 }
