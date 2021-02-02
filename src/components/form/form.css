@@ -1,5 +1,29 @@
 .form {
   display: grid;
-  grid-auto-flow: row;
-  max-width: 300px;
+  text-align: center;
+}
+
+.form .btn {
+  margin: 2em;
+}
+
+.form__hint a {
+  margin-left: 0.5em;
+}
+
+.form__otp {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: center;
+  grid-column-gap: 1em;
+}
+
+.form__otp input {
+  padding: 10px;
+  width: 2.8rem;
+  border-radius: 10px;
+}
+
+.form__resendLink a {
+  margin-left: 0.5em;
 }
