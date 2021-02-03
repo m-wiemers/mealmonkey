@@ -19,7 +19,7 @@
   --placeholder-color: #4a4b4d;
   --input-color: #f2f2f2;
   --facebook-color: #367fc0;
-  --main-font: "Metropolis", helvetica, sans-serif;
+  --main-font: "Metropolis", sans-serif;
 }
 
 html {
@@ -27,7 +27,7 @@ html {
 }
 
 body {
-  font-family: var(--main-font);
+  font-family: "Metropolis", sans-serif;
   margin: 0;
 }
 
@@ -37,7 +37,7 @@ select,
 optgroup,
 textarea {
   margin: 0;
-  font-family: var(--main-font);
+  font-family: "Metropolis", sans-serif;
 }
 
 a,
