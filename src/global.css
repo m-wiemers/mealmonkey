@@ -1,4 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+/* Font made from <a href="http://www.onlinewebfonts.com">oNline Web Fonts</a>is licensed by CC BY 3.0 */
+
+@font-face {
+  font-family: "Metropolis";
+  src: url("../src/assets/Matropolis.woff2") format("woff2"),
+    url("../src/assets/Metropolis.woff") format("woff"),
+    url("../src/assets/Metropolis.ttf") format("ttf");
+}
 
 *,
 *::after,
