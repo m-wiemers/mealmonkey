@@ -19,9 +19,8 @@ function createPasswordContainer() {
 
   const password = createElement("div", {
     className: "form__otp",
+    children: [code1, code2, code3, code4],
   });
-
-  password.append(code1, code2, code3, code4);
 
   return password;
 }
@@ -58,6 +57,8 @@ function createHint() {
   return hint;
 }
 
+// Create Next- Button
+
 function createButton() {
   const button = createElement("button", {
     innerText: "Next",
@@ -65,6 +66,8 @@ function createButton() {
   });
   return button;
 }
+
+// Export Function
 
 export function createVerifyForm() {
   const form = document.createElement("form");
