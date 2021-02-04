@@ -1,68 +1,79 @@
-function createOTPinput() {
-  const input = document.createElement("input");
-  input.type = "password";
-  input.className = "codeinput";
-  input.maxLength = "1";
-  input.placeholder = "*";
+import { createElement } from "../utils/createElement";
+
+function createInput() {
+  const input = createElement("input", {
+    className: "input",
+    placeholder: "*",
+    type: "password",
+    maxLength: "1",
+  });
 
   return input;
 }
 
 function createPasswordContainer() {
-  const code1 = createOTPinput();
-  const code2 = createOTPinput();
-  const code3 = createOTPinput();
-  const code4 = createOTPinput();
+  const code1 = createInput();
+  const code2 = createInput();
+  const code3 = createInput();
+  const code4 = createInput();
 
-  const password = document.createElement("div");
-  password.className = "form__otp";
-  password.append(code1, code2, code3, code4);
+  const password = createElement("div", {
+    className: "form__otp",
+    children: [code1, code2, code3, code4],
+  });
 
   return password;
 }
 
-function createHeadline() {
-  const title = document.createElement("h2");
-  title.innerText = "We have sent an OPT to your Mobile";
+function createTitle() {
+  const title = createElement("h2", {
+    innerText: "We have sent an OPT to your Mobile",
+  });
 
   return title;
 }
 
 function createParagraph() {
-  const text = document.createElement("p");
-  text.innerText =
-    "Please check your Mobile number 071******12 continue to reset your password";
-
+  const text = createElement("p", {
+    innerText:
+      "Please check your Mobile number 071*****12 continue to reset your passsord",
+  });
   return text;
 }
 
 function createHint() {
-  const hint = document.createElement("p");
-  hint.className = "form__hint";
-  hint.innerText = "Didn`t Receive?";
+  const hint = createElement("p", {
+    className: "form__hint",
+    innerText: "Didn`t Receive?",
+  });
 
-  const resendLink = document.createElement("a");
-  resendLink.innerText = "Clicke here";
-  resendLink.href = "#";
+  const resendLink = createElement("a", {
+    innerText: "Clicke here",
+    href: "#",
+  });
 
   hint.append(resendLink);
 
   return hint;
 }
 
-function createButton() {
-  const button = document.createElement("button");
-  button.innerText = "Next";
-  button.className = "btn";
+// Create Next- Button
 
+function createButton() {
+  const button = createElement("button", {
+    innerText: "Next",
+    className: "btn",
+  });
   return button;
 }
+
+// Export Function
 
 export function createVerifyForm() {
   const form = document.createElement("form");
   form.className = "form";
 
-  const title = createHeadline();
+  const title = createTitle();
 
   const text = createParagraph();
 
