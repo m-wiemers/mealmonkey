@@ -27,3 +27,10 @@
 .form__resendLink a {
   margin-left: 0.5em;
 }
+
+.message {
+  color: red;
+  font-size: larger;
+  font-weight: 900;
+  height: 1em;
+}
