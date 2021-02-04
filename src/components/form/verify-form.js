@@ -11,20 +11,6 @@ function createInput() {
   return input;
 }
 
-function createPasswordContainer() {
-  const code1 = createInput();
-  const code2 = createInput();
-  const code3 = createInput();
-  const code4 = createInput();
-
-  const password = createElement("div", {
-    className: "form__otp",
-    children: [code1, code2, code3, code4],
-  });
-
-  return password;
-}
-
 function createTitle() {
   const title = createElement("h2", {
     innerText: "We have sent an OPT to your Mobile",
@@ -77,11 +63,32 @@ export function createVerifyForm() {
 
   const text = createParagraph();
 
-  const password = createPasswordContainer();
+  const code1 = createInput();
+  const code2 = createInput();
+  const code3 = createInput();
+  const code4 = createInput();
+
+  const password = createElement("div", {
+    className: "form__otp",
+    children: [code1, code2, code3, code4],
+  });
 
   const button = createButton();
 
   const hint = createHint();
+
+  form.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    const secretPassword = "3217";
+    const pw = code1.value + code2.value + code3.value + code4.value;
+
+    if (pw === secretPassword) {
+      alert(`Your OTP ${pw} is correct`);
+    } else {
+      alert("password is NOT correct");
+    }
+  });
 
   form.append(title, text, password, button, hint);
   return form;
