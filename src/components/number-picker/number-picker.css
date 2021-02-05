@@ -1,0 +1,8 @@
+.inputPortions {
+  border: 2px solid var(--main-color);
+}
+
+.numberForm {
+  display: grid;
+  grid-auto-flow: column;
+}
